@@ -1,6 +1,7 @@
 import React from 'react'
 import ParticlesBg from './components/custom/ParticlesBg'
 import './App.css';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -10,16 +11,7 @@ function App() {
       <ParticlesBg />
 
       <div className="absolute inset-0 flex flex-col justify-between z-10">
-        {/* Top Section: Branding and Sign In Button */}
-        <div className="flex justify-between items-center p-6 sm:p-8 md:p-10">
-          <div className="text-white text-lg font-semibold">
-            <h1 className="text-3xl md:text-4xl font-bold">Nomadica</h1>
-            <p className="text-sm md:text-base">Your Adventure, Perfected by AI</p>
-          </div>
-          <button className="bg-gradient-to-r from-teal-400 to-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition">
-            Sign In
-          </button>
-        </div>
+        
 
         {/* Middle Section: Main Content */}
         <div className="flex-1 flex flex-col justify-center items-center text-center text-white px-4 sm:px-8 lg:px-16">
@@ -35,9 +27,12 @@ function App() {
               Why settle for average when you can travel like a pro? Nomadica’s sleek, AI-powered planner makes every trip effortlessly perfect. Try it once – and see the difference for yourself.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition">
-                Create Trip
-              </button>
+              <Link to={'/create-trip'}>
+                <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition">
+                  Create Trip
+                </button>
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -47,4 +42,3 @@ function App() {
 }
 
 export default App;
-
