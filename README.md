@@ -20,11 +20,11 @@ Frontend: React, Tailwind CSS
 
 Backend: Node.js, Express
 
-Database: PostgreSQL
+Database: Google Firebase
 
-Authentication: JWT
+Authentication: Google authentication
 
-AI Integration: OpenAI API (or other LLM services)
+AI Integration: Gemini API (any other should work too)
 
 🚧 Status: Work in Progress
 
